@@ -1,0 +1,6 @@
+applications:
+  - name: worker_pcf_scheduler
+    path: target\worker_pcf-0.0.1-SNAPSHOT.jar
+    health-check-type: port
+    instances: 2
+    memory: 1G
