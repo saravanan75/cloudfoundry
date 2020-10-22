@@ -1,0 +1,9 @@
+applications:
+- name: hello_ps_pcf_scheduler
+  path: .\target\hello_spring_pcf-0.0.1-SNAPSHOT.jar
+  disk_quota: 900M
+  instances: 2
+  memory: 1G
+  routes:
+  - route: hellopspcf.cfapps.io
+  stack: cflinuxfs3
