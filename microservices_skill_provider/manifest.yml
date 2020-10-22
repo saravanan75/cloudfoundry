@@ -1,0 +1,9 @@
+applications:
+- name: microservices_skill_provider
+  path: .\target\microservices_skill_provider-0.0.1-SNAPSHOT.jar
+  disk_quota: 900M
+  instances: 1
+  memory: 1G
+  routes:
+  - route: skillprovider.cfapps.io
+  stack: cflinuxfs3
